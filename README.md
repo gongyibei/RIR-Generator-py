@@ -1,5 +1,6 @@
 # RIR-Generator-py
 为音频添加混响
+
 RIR-Generator 的纯python版本: https://github.com/ehabets/RIR-Generator
 
 参考: https://github.com/srikanthrajch/py-RIR-Generator
