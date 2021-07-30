@@ -32,7 +32,6 @@ def sim_microphone(x, y, z, angle, mtype):
             rho = 1
 
 
-        print(x, y, z)
         vartheta = acos(z/sqrt(pow(x, 2) + pow(y, 2) + pow(z, 2)))
         varphi = atan2(y, x)
         gain = sin(pi/2-angle[1]) * sin(vartheta) * cos(angle[0]-varphi) + cos(pi/2-angle[1]) * cos(vartheta)
@@ -92,7 +91,6 @@ def computeRIR(c, fs, rr, nMicrophones, nSamples, ss, LL, beta, microphone_type,
 
                     for q in range(2):
                         Rp_plus_Rm[0] = (1-2*q)*s[0] - r[0] + Rm[0]
-                        print(beta, mx, q)
                         refl[0] = pow(beta[0], abs(mx-q)) * pow(beta[1], abs(mx))
                         
                         for j in range(2):
